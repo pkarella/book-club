@@ -13,6 +13,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
   }
+
   submitForm(title: string, name: string, age: number, description: string){
       var newMember: Member = new Member(title, name, age, description);
       this.memberService.addMember(newMember);

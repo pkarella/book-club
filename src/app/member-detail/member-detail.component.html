@@ -1,6 +1,6 @@
 
 <div>
-  <h3>{{memberToDisplay.title}}</h3>
-  <h4>{{memberToDisplay.name}}</h4>
-  <p>{{memberToDisplay.description}}</p>
+  <h3>{{(memberToDisplay | async)?.title}}</h3>
+  <h4>{{(memberToDisplay | async)?.name}}</h4>
+  <p>{{(memberToDisplay | async)?.description}}</p>
 </div>

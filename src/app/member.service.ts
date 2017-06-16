@@ -19,12 +19,15 @@ export class MemberService {
    }
 
 
-    // getMemberById(memberId: number){
-    //     for (var i = 0; i <= MEMBERS.length - 1; i++) {
-    //       if (MEMBERS[i].id === memberId) {
-    //         return MEMBERS[i];
-    //       }
-    //     }
-    //   }
+   getMemberById(memberId: string){
+   return this.database.object('members/' + memberId);
+ }
+ updateMember(localUpdatedMember){
+    var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+    memberEntryInFirebase.update({title: localUpdatedMember.title,
+                                name: localUpdatedMember.artist,
+                                age: localUpdatedMember.artist,
+                                description: localUpdatedMember.description});
 
+}
 }
