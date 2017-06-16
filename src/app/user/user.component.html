@@ -1,0 +1,31 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Member Information</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Title</label>
+        <br>
+        <input #newTitle>
+      </div>
+
+      <div>
+        <label>Name:</label>
+        <br>
+        <input #newName>
+      </div>
+      <div>
+        <label>Age:</label>
+        <br>
+        <input #newAge>
+      </div>
+      <div>
+        <label>Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+      <button (click)="submitForm(newTitle.value, newName.value, newAge.value, newDescription.value);newTitle.value=''; newName.value=''; newAge.value=''; newDescription.value=''"> Click Here to Enter Your Information</button>
+    </div>
+  </div>
+</div>

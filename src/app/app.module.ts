@@ -12,6 +12,7 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { UserComponent } from './user/user.component';
 
 
 export const firebaseConfig = {
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     FrontPageComponent,
     AboutComponent,
     MembershipPageComponent,
-    MemberDetailComponent
+    MemberDetailComponent,
+    UserComponent
 
   ],
   imports: [

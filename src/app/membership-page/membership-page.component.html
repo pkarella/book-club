@@ -1,5 +1,5 @@
 
-<div *ngFor="let member of members"(click)="goToDetailPage(member)">
+<div *ngFor="let member of members | async" (click)="goToDetailPage(member)">
   <div class="bg-success panel-body">
     <h3><em>{{member.title}}:</em> {{member.name}}</h3>
   </div>

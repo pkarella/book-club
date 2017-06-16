@@ -4,6 +4,11 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import { AboutComponent } from './about/about.component';
 import { MembershipPageComponent } from './membership-page/membership-page.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
+import { UserComponent } from './user/user.component';
+
+
+
+
 const appRoutes: Routes = [ {
   path: '',
   component: FrontPageComponent
@@ -19,7 +24,11 @@ const appRoutes: Routes = [ {
 {
   path: 'members/:id',
   component: MemberDetailComponent
-}
+},
+{
+    path: 'user',
+    component: UserComponent
+  }
 ];
 
 
