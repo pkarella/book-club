@@ -6,7 +6,7 @@
     "peter <pkarella27@yahoo.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/pkarella/book-club",
   "ignore": [
     "**/.*",
     "node_modules",
