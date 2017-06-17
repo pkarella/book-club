@@ -14,6 +14,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { UserComponent } from './user/user.component';
 import { EditMemberComponent } from './edit-member/edit-member.component';
+import { TitlePipe } from './title.pipe';
 
 
 export const firebaseConfig = {
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     MembershipPageComponent,
     MemberDetailComponent,
     UserComponent,
-    EditMemberComponent
+    EditMemberComponent,
+    TitlePipe
 
   ],
   imports: [

@@ -1,7 +1,9 @@
 <h4>Edit Album</h4>
 
-<label>New Album Title:</label>
-<input [(ngModel)]="selectedMember.title">
+<select [(ngModel)]='selectedMember.title'>
+  <option>Official</option>
+  <option>Member</option>
+   </select>
 <br>
 <label>New Album Artist:</label>
 <input [(ngModel)]="selectedMember.name">
@@ -13,3 +15,4 @@
 <input [(ngModel)]="selectedMember.description">
 
 <button (click)="beginUpdatingMember(selectedMember)"> Update </button>
+<button (click)="beginDeletingMember(selectedMember)">Delete</button>

@@ -1,5 +1,12 @@
 
-<div *ngFor="let member of members | async" class="panel panel-default">
+<select (change)="onChangeTitle($event.target.value)">
+  <option value="allTitles">AllTitles</option>
+  <option value="officials">Official</option>
+  <option value="members">Member</option>
+</select>
+
+
+<div *ngFor="let member of members | async | title:filterByTitle" class="panel panel-default">
   <div class="bg-success panel-body">
     <h3 (click)="goToDetailPage(member)"><em>{{member.title}}:</em> {{member.name}}</h3>
     <div *ngIf="currentRoute=== '/user'">
