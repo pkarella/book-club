@@ -2,6 +2,48 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
+## Detailed Description
+
+  _This is a book club website created in AngularJS. It will track club members and filter between members and officials. Full CRUD
+  functionality_
+
+## Prereqs/Setup/Installation
+
+* Clone this repository
+* Navigate to repository in command line
+* Run npm install
+* Run bower install bootstrap --save
+* Open project in editor
+* Create a file in src/app called api-keys.ts
+* Set up Firebase database
+* Command line: run ng serve
+* View app at http://localhost:4200/
+
+## Firebase
+
+_To run this app, you will need a Firebase account and credentials._
+* Go to the firebase website and follow the instructions to set up an       account
+* Create a new project
+* Select "Add Firebase To Your Website" from your console within the firebase account.
+* In the cloned project file app create api-keys.ts, type:
+  * export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+* Place your Firebase credentials within the template.
+* Return to Firebase Console, select project's name from the list.
+* Visit the Database area by selecting the Database option from the   navbar on the left-hand side.
+* Near the top of the page select the option that reads RULES.
+* Change both the ".read", and ".write" properties to "true"
+
+## Future Plans
+* I want to integrate materialize into the project to make the project more professional.
+* I want to integrate more pipe features.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

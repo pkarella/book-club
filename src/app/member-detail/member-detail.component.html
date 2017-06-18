@@ -1,6 +1,15 @@
 
 <div>
-  <h3>{{(memberToDisplay | async)?.title}}</h3>
-  <h4>{{(memberToDisplay | async)?.name}}</h4>
-  <p>{{(memberToDisplay | async)?.description}}</p>
+  <h3><em>{{(memberToDisplay | async)?.title}}:</em></h3>
+  <h4><strong>{{(memberToDisplay | async)?.name}}</strong></h4>
+  <div class="jumbotron bg-info">
+    <p>Description of Member: <strong>{{(memberToDisplay | async)?.description}}</strong></p>
+  </div>
+</div>
+
+
+<div class="well">
+<h5>
+  {{(memberToDisplay | async)?.name}} is a Caffeine dependent life-form. A {{(memberToDisplay | async)?.title}} of mystery and power, whose power is exceeded only by his mystery
+</h5>
 </div>

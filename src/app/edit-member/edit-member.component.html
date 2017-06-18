@@ -1,18 +1,18 @@
-<h4>Edit Album</h4>
+<h4>Edit BookClub Member</h4>
 
 <select [(ngModel)]='selectedMember.title'>
   <option>Official</option>
   <option>Member</option>
    </select>
 <br>
-<label>New Album Artist:</label>
+<label>Members Name:</label>
 <input [(ngModel)]="selectedMember.name">
 <br>
-<label>New Album Artist:</label>
+<label>Members Age:</label>
 <input [(ngModel)]="selectedMember.age">
 <br>
-<label>New Album Description:</label>
+<label>Describe:</label>
 <input [(ngModel)]="selectedMember.description">
 
-<button class="waves-effect waves-light btn-large"(click)="beginUpdatingMember(selectedMember)"> Update </button>
-<button class="waves-effect waves-light btn-large"(click)="beginDeletingMember(selectedMember)">Delete</button>
+<button class="btn btn-primary my-2 my-sm-0"(click)="beginUpdatingMember(selectedMember)"> Update </button>
+<button class="btn btn-success my-2 my-sm-0"(click)="beginDeletingMember(selectedMember)">Delete</button>

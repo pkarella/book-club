@@ -1,13 +1,12 @@
-
+<h3>Filter all the Officials and Members</h3>
 <select (change)="onChangeTitle($event.target.value)">
   <option value="allTitles">AllTitles</option>
   <option value="officials">Official</option>
   <option value="members">Member</option>
 </select>
 
-
 <div *ngFor="let member of members | async | title:filterByTitle" class="panel panel-default">
-  <div class="bg-success panel-body">
+  <div class="bg-danger panel-body">
     <h3 (click)="goToDetailPage(member)"><em>{{member.title}}:</em> {{member.name}}</h3>
     <div *ngIf="currentRoute=== '/user'">
       {{member.description}}
@@ -16,7 +15,7 @@
     </div>
   </div>
 </div>
-
+<b></b>
 
 
 

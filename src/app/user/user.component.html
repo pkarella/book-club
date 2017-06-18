@@ -1,8 +1,11 @@
-<div class="panel panel-default">
+
+<br>
+<br>
+<div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">Member Information</h3>
+    <h3 class="panel-title">Create a New Member</h3>
   </div>
-  <div class="panel-body">
+  <div class="panel-body bg-danger">
     <div>
       <div class='form-group'>
       <label>Experience Level:</label><br>
@@ -27,7 +30,7 @@
         <br>
         <textarea #newDescription></textarea>
       </div>
-      <button (click)="submitForm(newTitle.value, newName.value, newAge.value, newDescription.value);newTitle.value=''; newName.value=''; newAge.value=''; newDescription.value=''"> Click Here to Enter Your Information</button>
+      <button class="btn btn-danger my-2 my-sm-0" (click)="submitForm(newTitle.value, newName.value, newAge.value, newDescription.value);newTitle.value=''; newName.value=''; newAge.value=''; newDescription.value=''"> Click Here to Enter Your Information</button>
     </div>
   </div>
 </div>
